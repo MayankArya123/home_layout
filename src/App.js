@@ -9,7 +9,7 @@ function App() {
     <div className="App">
      
          <section className="top_navigation">
-             <div className="container">
+             <div className="container-fluid">
                 <div className="branding">
                      <h4 className="brand_name"> Tutedude
                      | Digital Marketing
@@ -25,13 +25,13 @@ function App() {
 
          <section className="main">
              <div className="row ct">
-                  <div className="col-6 con1">
+                  <div className="col-lg-6 col-xm-12 col-sm-12 con1">
                        <h4> Digital Marketing </h4>
                        <h5>Learn from Serial Entrepreneur who grew 2 ventures to 15 Mn+ Monthly Traffic - Step by Step Process for Digital Success</h5>
                         <hr className="horizontal_row"></hr>
                        <button>Go to the course</button>
                        </div>
-                  <div className="col-6 con2">
+                  <div className="col-lg-6 col-xm-12 col-sm-12 con2">
                      <h2> Course By </h2>
                       <button> Jitasmita Banerjee </button> 
                   </div>
@@ -39,20 +39,20 @@ function App() {
          </section>
 
          <section className="About">
-            <div className="row">
+            <div className="row ct">
                <div className="col-2">
                
                </div>
                <div className="col-8">
                     <h2 className="text-center">About this course</h2>
-                    <p>This course is an ideal course for someone running his own business or someone who is responsible for digital marketing at a company. The whole digital marketing arena is really confusing and has a goldmine of opportunities at the same time. You can either spend months into understanding the small nuances and waste Thousands of dollars and your precious time or you can take this course and see those nuances in minutes.</p>
+                    <p className="text-center">This course is an ideal course for someone running his own business or someone who is responsible for digital marketing at a company. The whole digital marketing arena is really confusing and has a goldmine of opportunities at the same time. You can either spend months into understanding the small nuances and waste Thousands of dollars and your precious time or you can take this course and see those nuances in minutes.</p>
                
                      <p className="text-center">What Makes me Qualified to Take this Course ?</p>
                      
-                     <p>I have taught over thousands of students over the past few years and I can vouch for the fact that after this course, there wil be nothing you won't know about digital marketing GET READY TO TAKE ACTION
+                     <p className="text-center">I have taught over thousands of students over the past few years and I can vouch for the fact that after this course, there wil be nothing you won't know about digital marketing GET READY TO TAKE ACTION
                      </p>
-                     <p className="">Throughout the entire course, you'll be taking action!</p>
-                     <button className="read_more">Read more</button>
+                     <p className="text-center">Throughout the entire course, you'll be taking action!</p>
+                     <p className="text-center "> <button className="read_more">Read more</button></p>
                      </div>
                <div className="col-2">
                
@@ -63,10 +63,10 @@ function App() {
          </section>
 
          <section className="course_corriculum">
-              <div className="row">
-                   <div className="col-8 cont1">
+              <div className="row ct">
+                   <div className="col-lg-8 col-sm-12 cont1">
                       <h4>Curriculum</h4>
-                       <p>✔14section ✔ 192lectures ✔ 28h 26m total length</p>
+                       <p className="make_it_wide">✔14section ✔ 192lectures ✔ 28h 26m total length</p>
                          <div className="button_container">
                          <button> Introduction to Digital Marketing Course</button>
                          <button> Market Research</button>
@@ -75,7 +75,7 @@ function App() {
                          <button> Read More</button>
                          </div>
                        </div>
-                   <div className="col-4 cont2">
+                   <div className="col-lg-4 col-sm-12 cont2">
                        
                    <div class="card" >
                    <img class="card-img-top" src={Image} alt="Card image cap" />
@@ -95,17 +95,17 @@ function App() {
          </section>
 
          <section className="overview_section">
-         <div className="row ">
-         <div className="col-6">
+         <div className="row ct x">
+         <div className="col-lg-6 col-sm-12 text-center">
          <h4  className="head_text_1">overview</h4>
          </div>
-         <div className="col-6">      
+         <div className="col-lg-6 col-sm-12 contain">      
          <h4 className= "head_text_2"> Who is this course for ?</h4>
          </div>
          </div>
  
-           <div className="row">
-                <div className="col-4">
+           <div className="row ct uplift">
+                <div className="col-lg-4 col-sm-12">
                 <div className="card card_1">
                 <p>✔ Drive Free Traffic through SEO and Social Media</p>
                 <p>✔ How to market on all major social media platforms</p>
@@ -113,7 +113,7 @@ function App() {
                 </p>
              </div>
                 </div>
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-12">
                 <div className="card card_2">
                 <p>✔ Drive Free Traffic through SEO and Social Media</p>
                 <p>✔ How to market on all major social media platforms</p>
@@ -121,7 +121,9 @@ function App() {
                 </p>
              </div>
                 </div>
-                <div className="col-3">
+                
+                <div className="col-lg-4 col-sm-12">
+                 <p className="head_text_2 d-lg-none"> who is this course for  </p>
                   <div className="card card_3">
                <p>✔ Anyone who is running his/her own business </p> 
                <p> ✔ Anyone who is responsible for Digital Marketing at her company</p>
@@ -135,16 +137,16 @@ function App() {
          </section>
 
          <section className="footer">
-             <div className="row">
-                 <div className="col-4 conta_1">
+             <div className="row ct">
+                 <div className="col-lg-4 conta_1 text-center">
                       <h4> OUR VISION</h4>
                        <p>
                        Our vision is to provide all the students with all the resources so that they can learn any new skill from their homes.
                        </p>
 
                  </div>
-                 <div className="col-4 conta_2">
-                     <h4> USEFUL LINKS</h4>
+                 <div className="col-lg-4 conta_2">
+                     <h4 className="y"> USEFUL LINKS</h4>
                      <div className="useful_links">
                      <a href="#"> About Us </a>
                      <a href="#"> Contact Us </a>
@@ -152,7 +154,7 @@ function App() {
                      <a href="#"> FAQ </a>
                      </div>
                  </div>
-                 <div className="col-4 conta_3">
+                 <div className="col-lg-4 conta_3">
                      <h4> CONTACT </h4>
                       <p> sector-6, Haryana , India</p>
                       <p> sector-6, Haryana , India</p>
