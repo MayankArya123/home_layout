@@ -180,38 +180,7 @@ function App() {
          
          </section>
 
-         <section className="section_new">
-                <div className="head_content">
-                       <hr className="blue_row"></hr>
-                </div>
-              <div className="main_cont">
-                  <div className="cont cont_1">
-                       <div className="img_cont">
-                       <img class="card-img-top" src={IMAGE1} alt="Card image cap" />
-                       </div>
-                         <h5>intelligent websites</h5>
-                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                         <button>click me</button>
-                  </div>
-                  <div className="cont cont_2">
-                       <div className="img_cont">
-                       <img class="card-img-top" src={IMAGE2} alt="Card image cap" />
-                       </div>
-                         <h5>
-                         Marketing vs Engagement</h5>
-                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                         <button>click me</button>
-                  </div>
-                  <div className="cont cont_3">
-                       <div className="img_cont">
-                       <img class="card-img-top" src={IMAGE3} alt="Card image cap" />
-                       </div>
-                         <h5>Case studies</h5>
-                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                         <button>click me</button>
-                  </div>
-              </div>
-         </section>
+       
 
          <section className="rough">
                  <div className="row ct cb">
@@ -221,7 +190,7 @@ function App() {
                       </div>
                         <h5>intelligent websites</h5>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                        <p className="text-center">  <button >click me</button> </p> 
+                        <p className="text-center">  <button className="btn btn-info">read more</button> </p> 
                       </div> 
                       <div className="col-lg-4 col-md-12 col-sm-12 col-xm-12">
                       <div className="img_cont">
@@ -230,7 +199,7 @@ function App() {
                         <h5>
                         Marketing vs Engagement</h5>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                        <p className="text-center">  <button >click me</button> </p> 
+                        <p className="text-center">  <button className="btn btn-info">read more</button> </p> 
                       </div> 
                       <div className="col-lg-4 col-md-12 col-sm-12 col-xm-12">
                       <div className="img_cont">
@@ -238,7 +207,7 @@ function App() {
                       </div>
                         <h5>Case studies</h5>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
-                      <p className="text-center">  <button >click me</button> </p> 
+                      <p className="text-center">  <button className="btn btn-info">read more</button> </p> 
                       </div> 
                  </div>
          </section>

@@ -546,13 +546,20 @@ body {
   margin-top: 60px;
 
 }
+
+
+
+.rough {
+  padding-top: 1.3rem;
+}
+
 .course_corriculum .cont2 .card {
 /* 
   height: 60vh;
   background-color: yellow;
   margin-top: 2vh; */
   width: 100%;
-  height: 450px;
+  height: auto;
   border: 2px solid grey;
   margin-bottom: 50px;
   /* box-shadow: hotpink; */
