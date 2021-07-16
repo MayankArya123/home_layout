@@ -1,18 +1,198 @@
 
     @media (min-width: 992px) and (max-width: 9000px) {
-      
+
       .ct{
         /* overflow:hidden; */
         /* width: 100vw; */
             width: 80% !important;
             max-width: 1080px !important;
             margin: auto !important;
-       
-      
         /* position: relative; */
       }
 
     }
+
+    .head_content {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    .blue_row {
+       height: 3px;
+       background-color:  #4e5ed0;
+       width: 5em;
+       max-width: 100px;
+      
+    }
+
+    @media (min-width: 0px) and (max-width: 991.50px) {
+
+
+      .cb {
+        width: 80% !important;
+        /* max-width: 1080px !important; */
+        margin: auto !important;
+      }
+
+       
+    .section_new {
+      width: 100%;
+      background-color: darkorchid;
+      margin:auto;
+  }
+
+  .section_new .main_cont{
+      width: 80%;
+      max-width: 1080px;
+      background-color: orange;   
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      /* justify-content: space-evenly; */
+  }
+ 
+
+  .section_new .main_cont .cont_1{
+      background-color: red;   
+      width: 90% !important;
+      margin:auto;
+  }
+  .section_new .main_cont h5{
+      margin-top: 18px;
+  }
+  .section_new .main_cont p{
+      padding-right: 18px;
+  }
+
+  .section_new .main_cont .cont_1 button,.section_new .main_cont .cont_2 button,.section_new .main_cont .cont_3 button{
+        width: 20%;
+        margin-left: 40% ;
+  }
+  .section_new .main_cont .cont_2{
+      background-color: gainsboro;   
+      width: 90% !important;
+      margin: auto;
+  }
+  .section_new .main_cont .cont_3{
+      background-color: green;   
+      width: 90% !important;
+      margin: auto;
+  }
+
+
+
+    }
+
+
+
+
+    .section_new {
+        width: 100%;
+        background-color: darkorchid;
+        margin:auto;
+    }
+
+    .section_new .main_cont{
+        width: 80%;
+        max-width: 1080px;
+        background-color: orange;   
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+   
+
+    .section_new .main_cont .cont_1{
+        background-color: red;   
+        width: 30%;
+    }
+    .section_new .main_cont h5{
+        margin-top: 18px;
+    }
+    .section_new .main_cont p{
+        padding-right: 18px;
+    }
+
+    .section_new .main_cont .cont_1 button,.section_new .main_cont .cont_2 button,.section_new .main_cont .cont_3 button{
+          width: 40%;
+          margin-left: 30%;
+    }
+    .section_new .main_cont .cont_2{
+        background-color: gainsboro;   
+        width: 30%;
+    }
+    .section_new .main_cont .cont_3{
+        background-color: green;   
+        width: 30%;
+    }
+
+    @media (min-width: 0px) and (max-width: 991.50px) {
+
+
+       .App .top_navigation {
+         position: relative !important;
+       }
+      
+        .side_bar {
+          display: none;
+        }
+
+        .links {
+          display: none !important;
+        }
+
+    }
+
+
+    /* Global classes  */
+/* 
+    * {
+      box-sizing: border-box;
+    } */
+
+    /* .show1 {
+      background-color: white !important;
+    } */
+
+
+    .read_button {
+     background-color:whitesmoke; 
+     /* font-size: 18px !important; */
+     font-weight:600 !important;
+     color: darkorchid !important;
+     /* width: 40% !important;
+     margin-left: 15% !important; */
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .side_bar {
+      display: none;
+    }
+
+    
+    .show {
+      color: white;
+      list-style: none;
+      display: block;
+      width: 80%;
+      margin: auto;
+      background-color: black;
+      border-top: 3px solid #2ea3f2;
+      padding:5%;
+      z-index: 2;
+      position: absolute;
+      left: 10%;
+    }
+    
+    .show li{
+        padding-bottom: 1%;
+    }
+ 
 
 
         
@@ -28,6 +208,8 @@ body {
   /* overflow:hidden; */
   /* width: 100vw; */
 
+
+
  .ct{
   /* overflow:hidden; */
   /* width: 100vw; */
@@ -37,11 +219,17 @@ body {
   /* position: relative; */
 }
 
+/* .side_bar {
+  display: none;
+} */
+
 .App .top_navigation {
   /* display: flex;
   justify-content: space-around; */
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
+  position: fixed;
+  z-index: 1;
 
 }
 .App .top_navigation .container-fluid {
@@ -92,7 +280,9 @@ body {
 .App .top_navigation .container-fluid .links {
   /* display: flex;
   justify-content: space-around; */
-   margin-left: 0px;
+   /* margin-left: 300px; */
+   position:  absolute;
+   right: 80px;
   /* transform: translateX(-330px); */
 }
 
@@ -108,13 +298,14 @@ body {
 } */
 
 .App .main .con1 {
+
   display: block;
   /* flex-direction: column; */
   /* background-color: red; */
   justify-content: center;
   height: auto;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 160px;
 } 
 
 .App .main .con1 h4 {
@@ -155,8 +346,10 @@ body {
 } 
 
 .App .main .con1 button {
+  transition: width background-color 300ms !important;
   background-color: #ff914d;
-  width: 140px;
+  transition-timing-function:ease ;
+  width: 135px;
   height: 40px;
   /* margin-bottom: 90px; */
   /* margin-left:73%; */
@@ -169,10 +362,11 @@ body {
   border-color: #ff914d;
   border-radius: 4px;
   color: white;
+  line-height: 16px;
 
   /* margin-bottom: 50px; */
-  font-size: medium;
-  font-weight: medium;
+  font-size: 16px;
+  font-weight: small;
   /* display: block; */
   /* flex-direction: column; */
   /* background-color: red;
@@ -185,6 +379,11 @@ body {
   font-size: 23px;
   color: #fff!important; */
 } 
+
+.App .main .con1 button:hover {
+      width: 30% !important; 
+      background-color: orange !important; 
+}  
 
 .App .main .con2  {
   /* background-color: #ffba00; */
@@ -652,6 +851,14 @@ body {
 
 }
 
+.mobile_menu .line {
+  width: 28px;
+  background-color: white;
+  height: 3px;
+  margin: 5px 0;
+}
+
+
 .App .main .con1 h4 {
 
 font-size: 35px;
@@ -1007,7 +1214,7 @@ margin-left: 30%;
 
   .App .top_navigation .container-fluid {
     height: 80px ;
-  }
+    position: relative !important; }
 
   .App .top_navigation .container-fluid .branding h4{
  
@@ -1061,7 +1268,7 @@ margin-left: 30%;
 
   /* background-color: green !important; */
   height: auto;
-  margin-top: 70px;
+  margin-top: 40px;
   overflow-x: hidden;
 
 }
@@ -1085,6 +1292,13 @@ width: 80vw;
 margin-left: 14vw;
 line-height: 1.2em;
 } 
+
+.mobile_menu .line {
+  background-color: white;
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+}
 
 
 
@@ -1815,6 +2029,8 @@ margin-left: 30%;
       html {
         font-size: 5.2vw;
       } */ 
+
+      
   
       body {
         overflow:scroll;
@@ -1847,6 +2063,28 @@ margin-left: 30%;
         padding-left: 20px;
         margin-right: 0px;
       }
+ 
+       .App .top_navigation .container-fluid .links {
+          display: none !important;
+    }
+
+    .mobile_menu .line  {
+      background-color: white;
+      height: 4px;
+      width: 30px;
+      margin:6px 0;
+    }
+
+  
+    .mobile_menu .line  {
+      background-color: white;
+      height: 4px;
+      width: 30px;
+      margin:6px 0;
+    }
+    
+
+
 
       .App .top_navigation .container-fluid .links {
   
@@ -1873,7 +2111,7 @@ margin-left: 30%;
   
       /* background-color: green !important; */
       height:auto;
-      margin-top: 60px;
+      margin-top: 80px;
       overflow:hidden;
   
     }
@@ -2309,6 +2547,12 @@ margin-left: 30%;
       }
   
   
+      .mobile_menu .line {
+         width: 30px;
+         height: 6px;
+         background-color: white;
+         margin: 6px 0;
+      }
   
     .App .main .con1{
   
@@ -2707,6 +2951,10 @@ margin-left: 30%;
         margin-right: 0px;
       }
 
+      .mobile_menu .line {
+            width: 90px;
+      }
+
       .App .top_navigation .container-fluid .links {
   
          margin-left: 30vw; 
@@ -2726,6 +2974,12 @@ margin-left: 30%;
      
       }
   
+      .mobile_menu .line {
+        width: 32px;
+        height: 5px;
+        background-color: white;
+        margin: 8px 0;
+     }
   
   
     .App .main .con1{

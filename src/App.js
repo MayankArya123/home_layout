@@ -2,9 +2,29 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
  import Image from './images/lecture2.jpg'
+ import IMAGE1 from './images/proshark-intelligent-websites-4.webp'
+ import IMAGE2 from './images/proshark-engagement.webp'
+ import IMAGE3 from './images/construction-800x400-1.jpg'
+ import $ from "jquery"
+ import {useState} from 'react'
+//  import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+
+// library.add(fab);
 
 
+  
 function App() {
+
+      
+      const [Show,setShow] = useState(false)
+
+
+      const toggle=()=>{
+           console.log('h')
+            $(".side_bar").toggleClass("show")
+      }
+
   return (
     <div className="App">
      
@@ -20,7 +40,16 @@ function App() {
                      <a href="#">login </a>
                      <a href="#"> Sign up </a>
                 </div>
+                 <div className="mobile_menu" onClick={()=>toggle()}>
+                 <div className="line"></div>
+                 <div className="line"></div>
+                 <div className="line"></div>
+                 </div>
              </div>
+             <ul className="side_bar">
+                <li> login </li>
+                <li> signup</li>
+             </ul>
          </section>
 
          <section className="main">
@@ -72,7 +101,22 @@ function App() {
                          <button> Market Research</button>
                          <button> Website planning and creation using wordpress</button>
                          <button> Email Marketing</button>
-                         <button> Read More</button>
+                         <button className={Show ? "hide" : 'read_button' } onClick={()=>setShow(true)}> Read More</button>
+                           <div className={Show ? "show1": "hide" }>
+                           <button> Introduction to Digital Marketing Course</button>
+                           <button> Market Research</button>
+                           <button> Website planning and creation using wordpress</button>
+                           <button> Email Marketing</button>
+                           <button> Introduction to Digital Marketing Course</button>
+                           <button> Market Research</button>
+                           <button> Website planning and creation using wordpress</button>
+                           <button> Email Marketing</button>
+                           <button> Email Marketing</button>
+                           <button> Introduction to Digital Marketing Course</button>
+                           <button> Website planning and creation using wordpress</button>
+                           <button> Email Marketing</button>
+                           </div>
+                       
                          </div>
                        </div>
                    <div className="col-lg-4 col-sm-12 cont2">
@@ -131,9 +175,72 @@ function App() {
                <p> ✔ Someone who gets thrills by seeing growth in Real Time GA traffic on a day to day basis</p>
                </div>
                 </div>
-         
+
            </div>
          
+         </section>
+
+         <section className="section_new">
+                <div className="head_content">
+                       <hr className="blue_row"></hr>
+                </div>
+              <div className="main_cont">
+                  <div className="cont cont_1">
+                       <div className="img_cont">
+                       <img class="card-img-top" src={IMAGE1} alt="Card image cap" />
+                       </div>
+                         <h5>intelligent websites</h5>
+                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                         <button>click me</button>
+                  </div>
+                  <div className="cont cont_2">
+                       <div className="img_cont">
+                       <img class="card-img-top" src={IMAGE2} alt="Card image cap" />
+                       </div>
+                         <h5>
+                         Marketing vs Engagement</h5>
+                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                         <button>click me</button>
+                  </div>
+                  <div className="cont cont_3">
+                       <div className="img_cont">
+                       <img class="card-img-top" src={IMAGE3} alt="Card image cap" />
+                       </div>
+                         <h5>Case studies</h5>
+                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                         <button>click me</button>
+                  </div>
+              </div>
+         </section>
+
+         <section className="rough">
+                 <div className="row ct cb">
+                      <div className="col-lg-4 col-md-12 col-sm-12 col-xm-12">
+                      <div className="img_cont">
+                      <img class="card-img-top" src={IMAGE1} alt="Card image cap" />
+                      </div>
+                        <h5>intelligent websites</h5>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                        <p className="text-center">  <button >click me</button> </p> 
+                      </div> 
+                      <div className="col-lg-4 col-md-12 col-sm-12 col-xm-12">
+                      <div className="img_cont">
+                      <img class="card-img-top" src={IMAGE2} alt="Card image cap" />
+                      </div>
+                        <h5>
+                        Marketing vs Engagement</h5>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                        <p className="text-center">  <button >click me</button> </p> 
+                      </div> 
+                      <div className="col-lg-4 col-md-12 col-sm-12 col-xm-12">
+                      <div className="img_cont">
+                      <img class="card-img-top" src={IMAGE3} alt="Card image cap" />
+                      </div>
+                        <h5>Case studies</h5>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem officia numquam illo nobis magnam similique voluptas qui? Quis, reiciendis.</p>
+                      <p className="text-center">  <button >click me</button> </p> 
+                      </div> 
+                 </div>
          </section>
 
          <section className="footer">
